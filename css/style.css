@@ -201,7 +201,7 @@ a {
   height: 186px;
 }
 .dots-up {
-  top: 200px;
+  top: 0px;
   right: 0;
 } 
 .dots-down {
@@ -916,6 +916,7 @@ a {
   background-color: #eee;
   height: 30px;
   position: relative;
+  transition: width var(--main-transition) linear;
 }
 .our-skills .container .skills .skill .the-progress span {
   position: absolute;
@@ -924,6 +925,8 @@ a {
   top: 0;
   left: 0;
   border-radius: 0;
+  padding: 0px;
+  transition: width 1s linear;
 }
 @media (max-width: 991px) {
   .our-skills img {
@@ -1363,7 +1366,7 @@ a {
   text-align: center;
   font-weight: bold;
   position: relative;
-  transition: 1s;
+  transition: data-set 1s linear;
 }
 .stats .container .box:hover {
   background-color: #ffffff;
